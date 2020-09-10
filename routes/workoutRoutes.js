@@ -9,6 +9,13 @@ router.get('/workouts', (req, res) => {
     .catch(err => console.log(err))
 })
 
+router.get('/workouts/range', (req, res) => {
+  Workout.find()
+    // .populate('exercise')
+    .then(workouts => res.json(workouts))
+    .catch(err => console.log(err))
+})
+
 // POST one workout
 router.post('/workouts', (req, res) => {
   Workout.create(req.body)
