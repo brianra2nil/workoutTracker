@@ -3,37 +3,37 @@ const { model, Schema } = require('mongoose')
 const Exercise = new Schema({
   name: {
     type: String,
-    unique: true,
+    unique: false,
     required: true
   },
   type: {
     type: String,
-    unique: true,
+    unique: false,
     required: true
   },
   weight: {
-    type: String,
-    unique: true,
+    type: Number,
+    unique: false,
     required: true
   },
   sets: {
-    type: String,
-    unique: true,
+    type: Number,
+    unique: false,
     required: true
   },
   reps: {
-    type: String,
-    unique: true,
+    type: Number,
+    unique: false,
     required: true
   },
   duration: {
-    type: String,
-    unique: true,
+    type: Number,
+    unique: false,
     required: true
   },
   distance: {
-    type: String,
-    unique: true,
+    type: Number,
+    unique: false,
     required: false
   },
   
